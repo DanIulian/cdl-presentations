@@ -11,7 +11,7 @@ import logging
 
 logging.basicConfig(format='%(module)s:[%(funcName)s:%(lineno)d]:'
                            '%(levelname)s:%(message)s',
-                    level=logging.DEBUG)
+                    level=logging.ERROR)
 
 
 def hello():
@@ -21,7 +21,7 @@ def hello():
 
 def main():
     """Dumb wrapper to print hello message."""
-    logging.info("Going through main")
+    logging.error("Going through main")
     hello()
 
 
